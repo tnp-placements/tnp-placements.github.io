@@ -1,0 +1,32 @@
+.headerBg {
+    background-image: url("../../images/headerBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.link {
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    border-radius: 10px;
+    width: 75%;
+    height: 2px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .active::after {
+    background-color: white; /* Customize the underline color */
+    transform: scaleX(1);
+  }
+  
+  .link:focus::after {
+    transform: scaleX(1);
+  }
