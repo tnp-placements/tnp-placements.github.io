@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="text-[#0C101A] font-light flex flex-col gap-2">
             <div>Download the mobile version</div>
             <div className="flex gap-3">
-              <img src={Android} alt="android" className="w-[120px]" />
+              <img src={https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app} alt="android" className="w-[120px]" />
               <img src={IOS} alt="android" className="w-[120px]" />
             </div>
           </div>
@@ -61,10 +61,10 @@ const Footer = () => {
           </div>
           <div>
             <a
-              href="mailto:rajesh.rawat@nsut.ac.in"
+              href="mailto:placements@nsut.ac.in"
               className="text-[#0C101A] font-light"
             >
-              rajesh.rawat@nsut.ac.in
+              placements@nsut.ac.in
             </a>
           </div>
         </div>
