@@ -15,7 +15,13 @@ const Header = () => {
             href="mailto:tnpcell@nsitonline.in"
             className="px-10 py-2 duration-300 transition-all bg-[#0193DC] rounded-md font-semibold"
           >
-            Contact us
+            Contact us(Students)
+          </a></div>
+              <div><a
+            href="mailto:placements@nsitonline.in"
+            className="px-10 py-2 duration-300 transition-all bg-[#0193DC] rounded-md font-semibold"
+          >
+            Contact us(Recuiters)
           </a></div>
         </div>
     </header>
