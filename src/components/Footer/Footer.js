@@ -26,7 +26,7 @@ const Footer = () => {
             <div>Download the mobile version</div>
             <div className="flex gap-3">
               <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app"><img src={Android} alt="android" className="w-[120px]" /></a>
-              <img src={IOS} alt="android" className="w-[120px]" />
+              <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app"><img src={IOS} alt="android" className="w-[120px]" /></a>
             </div>
           </div>
         </div>
