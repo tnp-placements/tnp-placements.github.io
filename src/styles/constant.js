@@ -34,19 +34,19 @@ export const about = {
 
 export const stats = [
     {
-        value: 5000,
+        value: 20000+,
         key: "network"
     },
     {
-        value: 100,
+        value: 300+,
         key: "companies"
     },
     {
-        value: 10,
+        value: 10+,
         key: "countries"
     },
     {
-        value: 15,
+        value: 15+,
         key: "successful startups"
     }
 ];
@@ -325,7 +325,7 @@ export const achievements = [
 export const placementProcedure = [
     {
         number: 1,
-        title: `Campus invites Companies`,
+        title: `Campus Invites Companies`,
         description: `Companies are sent invites by Electronic Mail of On-Campus Recruitments along with Campus Placement Registration Form.`
     },
     {
@@ -336,7 +336,7 @@ export const placementProcedure = [
     {
         number: 3,
         title: `For Short Listing`,
-        description: `If needed, Resumes of the applicants are made available for short listing by the company concerned or An online test is conducted it can be based on Aptitude or Programming based.`
+        description: `If needed, Resumes of the applicants are made available for shortlisting by the company concerned or An online test is conducted it can be based on Aptitude or Programming based.`
     },
     {
         number: 4,
