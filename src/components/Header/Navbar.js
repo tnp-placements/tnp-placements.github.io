@@ -26,13 +26,14 @@ export default function Navbar({
           <a href="#culture" className={`${activeSection === 'culture'? 'active':''} link after:left-[6px]`} onClick={()=> handleLinkClick('culture')}>Culture</a>
           <a href="#academics" className={`${activeSection === 'academics'? 'active':''} link after:left-[9px]`} onClick={()=> handleLinkClick('academics')}>Academics</a>
           <a href="#recruiters" className={`${activeSection === 'recruiters'? 'active':''} link after:left-[11px]`} onClick={()=> handleLinkClick('recruiters')}>For Recruiters</a>
+          <a href="https://admin.tnpnsut.in">For Coordinators</a>
         </div>
         <div>
           <Link
             to="https://student.tnpnsut.in"
             className="px-10 py-2 duration-300 text-sm lg:text-base transition-all border border-[#0193DC] hover:bg-[#0193DC] rounded-md font-medium lg:font-semibold"
           >
-            Login
+            Student Section
           </Link>
         </div>
 
