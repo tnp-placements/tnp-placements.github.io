@@ -44,10 +44,10 @@ const ForRecruiters = () => {
       //     Download
       //   </button>
       // </div>
-      <div className="flex flex-col xl:flex-row xl:items-center">
-        <div className="flex justify-center">
-            <img src={Procedure} alt="placement" className="max-w-[520px] w-full xl:w-auto" />
-        </div>
+      // <div className="flex flex-col xl:flex-row xl:items-center">
+      //   <div className="flex justify-center">
+      //       <img src={Procedure} alt="placement" className="max-w-[520px] w-full xl:w-auto" />
+      //   </div>
         <div className="bg-[#F6F6F6] py-6 px-4 lg:py-16 lg:px-0 sm:px-16">
             <div className="px-2 sm:px-0 lg:px-14 mb-14">
                 <Heading2 text="Procedure" color="xl:after:w-0 after:w-0 text-[#0193DC] xl:text-center xl:w-full" />
