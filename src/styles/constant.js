@@ -353,4 +353,3 @@ export const placementProcedure = [
         title: `Selected student not allowed to sit for other companies`,
         description: `Once a student is selected in one company he/she will not be allowed to appear for other companies' interviews as per the Recruitment Policy**.`
     }
-]
