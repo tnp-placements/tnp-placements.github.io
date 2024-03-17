@@ -88,7 +88,7 @@ const Footer = () => {
       </div>
       <div className="text-[#0C101A] font-light border-[#E6E6E7] border-t flex flex-col gap-5 2xl:flex-row 2xl:justify-between 2xl:items-center py-8">
         <div>
-          Copyright © TNP Netaji Subhas University Of Technology. All right
+          Copyright © Training & Placements, NSUT. All right
           Reserved
         </div>
         <div>Privacy Policy - Terms and conditions</div>
