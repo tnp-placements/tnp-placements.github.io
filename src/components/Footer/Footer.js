@@ -74,13 +74,13 @@ const Footer = () => {
             Follow us on social media to find out the latest information
           </div>
           <div className="flex gap-4">
-            <a href="#" className="rounded-lg border-[#E6E6E7] p-2 border">
+            <a href="https://www.linkedin.com/in/placements-nsut/" className="rounded-lg border-[#E6E6E7] p-2 border">
               <AiOutlineTwitter />
             </a>
-            <a href="#" className="rounded-lg border-[#E6E6E7] p-2 border">
+            <a href="https://www.linkedin.com/in/placements-nsut/" className="rounded-lg border-[#E6E6E7] p-2 border">
               <BiLogoFacebook />
             </a>
-            <a href="#" className="rounded-lg border-[#E6E6E7] p-2 border">
+            <a href="https://www.linkedin.com/in/placements-nsut/" className="rounded-lg border-[#E6E6E7] p-2 border">
               <AiOutlineInstagram />
             </a>
           </div>
