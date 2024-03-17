@@ -34,19 +34,19 @@ export const about = {
 
 export const stats = [
     {
-        value: 20000+,
+        value: 20000,
         key: "network"
     },
     {
-        value: 300+,
+        value: 300,
         key: "companies"
     },
     {
-        value: 10+,
+        value: 10,
         key: "countries"
     },
     {
-        value: 15+,
+        value: 15,
         key: "successful startups"
     }
 ];
