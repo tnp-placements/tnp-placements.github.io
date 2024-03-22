@@ -10,7 +10,7 @@ const Header = () => {
       <Navbar />
       <div className='text-white w-full h-[85%] flex flex-col justify-center xl:pl-32 lg:pl-28 md:pl-20 sm:pl-14 pl-8 gap-3'>
         <div className='font-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl w-full leading-[1.15]'><h1>Netaji Subhas University<br /> Of Technology</h1></div>
-        <div className='lg:text-2xl md:text-xl sm:text-xl text-lg text-[#CECDCD] mb-2 sm:mb-4'><h2>Training And Placement Cell</h2></div>
+        <div className='lg:text-2xl md:text-xl sm:text-xl text-lg text-[#CECDCD] mb-2 sm:mb-4'><h2>Training And Placements</h2></div>
         <div className='flex flex-col md:flex-row gap-5'>
           <a
             href="mailto:tnpcell@nsitonline.in"
