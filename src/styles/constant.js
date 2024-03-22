@@ -325,13 +325,13 @@ export const achievements = [
 export const placementProcedure = [
     {
         number: 1,
-        title: `Campus/Company sends Invitation`,
-        description: `Either Company sends invitation to placements@nsitoline.in and in reply Collage sends invaitation to company from placements@nsitonline.in, placements@nsut.ac.in, placementsmgf@nsut.ac.in`
+        title: `T&P/Recuiters sends Invitation`,
+        description: `Either Recuiters sends invitation to placements@nsitoline.in and in reply T&P sends invaitation or T&P sends invitation to company from placements@nsitonline.in, placements@nsut.ac.in, placementsmgf@nsut.ac.in`
     },
     {
         number: 2,
-        title: `Companies fill the Campus Recruitment Form(CRF)`,
-        description: `After receiving the invitation from T&P NSUT, company filled the CRF/Performa and send it to T&P NSUT and JD with all the all details regarding the opening`
+        title: `Recruiters fill the Campus Recruitment Form(CRF)`,
+        description: `After receiving the invitation from T&P NSUT, Recruiters filled the CRF/Performa and send it to T&P NSUT with JD and all other details regarding the opening`
     },
     {
         number: 3,
@@ -341,12 +341,12 @@ export const placementProcedure = [
     {
         number: 4,
         title: `Shortlisting`,
-        description: `Company/Organisation shortlists the candidates on various criteria`
+        description: `Recruiters shortlists the candidates on various criteria for the respectives roles`
     },
     {
         number: 5,
         title: `Final list of selected Students`,
-        description: `The company is expected to furnish the final list of selected candidates with waitlist on the day of the On-Campus Process/Virtual Process. If this is not possible, then the Training and Placemenmts should be notified beforehand.`
+        description: `The company is expected to share the final list of selected candidates on same mail with waitlist on the day of the On-Campus Process/Virtual Process. If this is not possible, then the Training and Placemenmts should be notified beforehand.`
     },
     {
         number: 6,
