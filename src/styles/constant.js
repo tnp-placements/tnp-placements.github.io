@@ -325,32 +325,32 @@ export const achievements = [
 export const placementProcedure = [
     {
         number: 1,
-        title: `Campus Invites Companies`,
-        description: `Companies are sent invites by Electronic Mail of On-Campus Recruitments along with Campus Placement Registration Form.`
+        title: `Campus/Company sends Invitation`,
+        description: `Either Company sends invitation to placements@nsitoline.in and in reply Collage sends invaitation to company from placements@nsitonline.in, placements@nsut.ac.in, placementsmgf@nsut.ac.in`
     },
     {
         number: 2,
-        title: `Companies fill the form`,
-        description: `Companies send the duly filled Campus Placement Registration Form by Email to the Training and Placement Office after which an optimum slot is allocated to the firm.`
+        title: `Companies fill the Campus Recruitment Form(CRF)`,
+        description: `After receiving the invitation from T&P NSUT, company filled the CRF/Performa and send it to T&P NSUT and JD with all the all details regarding the opening`
     },
     {
         number: 3,
-        title: `For Short Listing`,
-        description: `If needed, Resumes of the applicants are made available for shortlisting by the company concerned or An online test is conducted it can be based on Aptitude or Programming based.`
+        title: `Opportunity is open for Eligible Students`,
+        description: `Opportunity is opened for Students on placements Portal`
     },
     {
         number: 4,
-        title: `Company visits the Campus`,
-        description: `The Company visits the Campus on the scheduled date for a Presentation. The On-Campus procedure may be held on the same day or on a later date, if collection of Resumes needs to be done in person.`
+        title: `Shortlisting`,
+        description: `Company/Organisation shortlists the candidates on various criteria`
     },
     {
         number: 5,
         title: `Final list of selected Students`,
-        description: `The company is expected to furnish the final list of selects on the day of the On-Campus Process. If this is not possible, then the TnP department should be notified beforehand.`
+        description: `The company is expected to furnish the final list of selected candidates with waitlist on the day of the On-Campus Process/Virtual Process. If this is not possible, then the Training and Placemenmts should be notified beforehand.`
     },
     {
         number: 6,
         title: `Selected student not allowed to sit for other companies`,
-        description: `Once a student is selected in one company he/she will not be allowed to appear for other companies' interviews as per the Recruitment Policy**.`
+        description: `Once a student is selected in one company he/she will be removed from placement Season as per the Recruitment Policy**.`
     }
     ]
