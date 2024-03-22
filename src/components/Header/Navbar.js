@@ -39,10 +39,10 @@ export default function Navbar({
             <IoIosArrowDown className={`${openLink && 'rotate-180'} transition-all duration-150`} />
             {/* <div className={`absolute ${openLink ? 'scale-1' : 'scale-0'} flex flex-col justify-center items-center border border-[#0193DC] top-[120%] right-0 left-0 md:left-[-8%] rounded-md w-full md:min-w-[180px] transition-all duration-200`}>
               <Link to="https://student.tnpnsut.in" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold border-b border-[#0193DC]" >
-                Student Login
+                Students
               </Link>
               <Link to="https://admin.tnpnsut.in" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
-                Coordinator Login
+                Coordinators
               </Link>
             </div> */}
           </div>
@@ -53,10 +53,10 @@ export default function Navbar({
             <IoIosArrowDown className={`${openLogin && 'rotate-180'} transition-all duration-150`} />
             <div className={`absolute ${openLogin ? 'scale-1' : 'scale-0'} flex flex-col justify-center items-center border border-[#0193DC] top-[120%] right-0 left-0 md:left-[-8%] rounded-md w-full md:min-w-[180px] transition-all duration-200`}>
               <Link to="https://student.tnpnsut.in" className="p-2 duration-200 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold border-b border-[#0193DC]" >
-                Student Login
+                Students
               </Link>
               <Link to="https://admin.tnpnsut.in" className="p-2 duration-200 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
-                Coordinator Login
+                Coordinators
               </Link>
             </div>
           </div>
