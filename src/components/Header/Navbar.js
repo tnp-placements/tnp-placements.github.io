@@ -35,14 +35,14 @@ export default function Navbar({
           <a href="#academics" className={`${activeSection === 'academics' ? 'active' : ''} link after:left-[9px]`} onClick={() => handleLinkClick('academics')}>Academics</a>
           <a href="#recruiters" className={`${activeSection === 'recruiters' ? 'active' : ''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
           <div className={`${openLink && 'active'} relative flex gap-1 items-center duration-300 link after:left-[1px] cursor-pointer`} onClick={()=>setOpenLink(!openLink)}>
-            Downloads
+            Downloads/Links
             <IoIosArrowDown className={`${openLink && 'rotate-180'} transition-all duration-150`} />
             <div className={`absolute ${openLink ? 'scale-1' : 'scale-0'} flex flex-col justify-center items-center border border-[#0193DC] top-[120%] right-0 left-0 md:left-[-8%] rounded-md w-full md:min-w-[180px] transition-all duration-200`}>
               <Link to="https://forms.gle/UShR3XVSmGkenxPz7" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold border-b border-[#0193DC]" >
                 Apply for NOC
               </Link>
-              <Link to="https://admin.tnpnsut.in" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
-                Download Undertaking
+              <Link to="https://drive.google.com/file/d/1B_nslwKgPqV3Eja1REDP_S4AxFJkQ7rk/view?usp=sharing" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
+                Undertaking
               </Link>
             </div>
           </div>
