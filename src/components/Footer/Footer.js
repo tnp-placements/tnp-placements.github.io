@@ -6,7 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineInstagram } from "react-icons/ai";
 
-const Footer = () => {
+const Footer=() => {
   return (
     <footer className="text-sm flex flex-col gap-4 bg-[#F9F9F9] mt-5 px-10 sm:px-16 2xl:px-24 pt-10">
       <div className="flex flex-col lg:flex-row lg:flex-wrap xl:flex-nowrap 2xl:flex-row gap-6 lg:gap-0 lg:gap-y-6 xl:gap-y-0 lg:w-full xl:w-auto xl:gap-10 xl:items-center">
@@ -19,14 +19,18 @@ const Footer = () => {
               <div className="text-[#0C101A] font-light">
                 Netaji Subhas University Of Technology
               </div>
-              <div className="font-semibold">Training and Placements</div>
+              <div className="font-semibold">Training and Placement Cell</div>
             </div>
           </div>
           <div className="text-[#0C101A] font-light flex flex-col gap-2">
             <div>Download the mobile version</div>
             <div className="flex gap-3">
-              <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app"><img src={Android} alt="android" className="w-[120px]" /></a>
-              <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app"><img src={IOS} alt="android" className="w-[120px]" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app">
+                <img src={Android} alt="android" className="w-[120px]" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.tnp.tnp_student_app">
+                <img src={IOS} alt="ios" className="w-[120px]" />
+              </a>
             </div>
           </div>
         </div>
@@ -88,7 +92,7 @@ const Footer = () => {
       </div>
       <div className="text-[#0C101A] font-light border-[#E6E6E7] border-t flex flex-col gap-5 2xl:flex-row 2xl:justify-between 2xl:items-center py-8">
         <div>
-          Copyright © Training & Placements, NSUT. All right
+          Copyright © TNP Netaji Subhas University Of Technology. All right
           Reserved
         </div>
         <div>Privacy Policy - Terms and conditions</div>

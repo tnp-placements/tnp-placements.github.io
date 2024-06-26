@@ -326,12 +326,12 @@ export const placementProcedure = [
     {
         number: 1,
         title: `T&P/Recuiters sends Invitation`,
-        description: `Either Recuiters sends invitation to placements@nsitoline.in and in reply T&P sends invaitation or T&P sends invitation to company from placements@nsitonline.in, placements@nsut.ac.in, placementsmgf@nsut.ac.in`
+        description: `Either Recuiters sends invitation to placements@nsitoline.in and in reply T&P sends invaitation or T&P sends invitation to company from placements@nsitonline.in, placements@nsut.ac.in, placementsmgf@nsut.ac.in.`
     },
     {
         number: 2,
         title: `Recruiters fill the Campus Recruitment Form(CRF)`,
-        description: `After receiving the invitation from T&P NSUT, Recruiters filled the CRF/Performa and send it to T&P NSUT with JD and all other details regarding the opening`
+        description: `After receiving the invitation from T&P NSUT, Recruiters filled the CRF/Performa and send it to T&P NSUT with JD and all other details regarding the opening.`
     },
     {
         number: 3,
@@ -341,16 +341,21 @@ export const placementProcedure = [
     {
         number: 4,
         title: `Shortlisting`,
-        description: `Recruiters shortlists the candidates on various criteria for the respectives roles`
+        description: `Recruiters shortlists the candidates on various criteria for the respectives role.`
     },
     {
         number: 5,
+        title: `Company visits the Campus`,
+        description: `The Company visits the Campus on the scheduled date for a Presentation. The On-Campus procedure may be held on the same day or on a later date, if collection of Resumes needs to be done in person.`
+    },
+    {
+        number: 6,
         title: `Final list of selected Students`,
         description: `The company is expected to share the final list of selected candidates on same mail with waitlist on the day of the On-Campus Process/Virtual Process. If this is not possible, then the Training and Placemenmts should be notified beforehand.`
     },
     {
-        number: 6,
+        number: 7,
         title: `Selected student not allowed to sit for other companies`,
-        description: `Once a student is selected in one company he/she will be removed from placement Season as per the Recruitment Policy**.`
+        description: `Once a student is selected in one company he/she will not be allowed to appear for other companies' interviews as per the Recruitment Policy.`
     }
-    ]
+]

@@ -1,27 +1,86 @@
 import React, { useState } from "react";
 import Logo from "../../images/NSUTlogo.png";
-// import { Link } from "react-router-dom";
 import './header.css';
-import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { RxCaretDown, RxCross2 } from "react-icons/rx";
+import { FiMenu } from "react-icons/fi";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "../ui/popover"
+import { cn } from "../lib/utils";
 
-export default function Navbar({
-  onHome,
-  onCulture,
-  onAcademics,
-  onRecruiters,
-}) {
-  const [activeSection, setActiveSection] = useState("home");
-  const [openLogin, setOpenLogin] = useState(false);
-  const [openLink, setOpenLink] = useState(false);
+const LoginPopover=() => {
+  const [isLoginDropDownOpen, setIsLoginDropDownOpen]=useState(false);
 
-  const handleLinkClick = (section) => {
+  return (
+    <Popover open={isLoginDropDownOpen} onOpenChange={(open) => setIsLoginDropDownOpen(open)}>
+      <PopoverTrigger asChild>
+        <button className="flex gap-2 px-10 py-2 duration-300 text-sm lg:text-base transition-all border border-[#0193DC] hover:bg-[#0193DC] rounded-md font-medium lg:font-semibold">
+          Login
+          <RxCaretDown size={20} className={`inline transition-all duration-150 ${isLoginDropDownOpen? 'rotate-180':''}`} />
+        </button>
+      </PopoverTrigger>
+      <PopoverContent className="flex flex-col justify-center border border-[#0193DC] rounded-md w-full md:min-w-[180px] transition-all duration-200 mt-4 p-0">
+        <a href="https://student.tnpnsut.in/"
+          className="px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all border-b border-[#0193DC] hover:bg-[#0193DC] font-medium lg:font-semibold"
+        >
+          Students
+        </a>
+        <a href="https://admin.tnpnsut.in/"
+          className="px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold"
+        >
+          Coordinators
+        </a>
+      </PopoverContent>
+    </Popover>
+  )
+}
+
+const Menu=({ isDrawer, setIsDrawerOpen }={ isDrawer: false }) => {
+  const [activeSection, setActiveSection]=useState("home");
+  const [isDownloadDropDownOpen, setIsDownloadDropDownOpen]=useState(false);
+
+  const handleLinkClick=(section) => {
     setActiveSection(section);
-  };
-
-  const handleClick = () => {
-    setOpenLogin(!openLogin);
+    if(isDrawer) setIsDrawerOpen(false);
   }
+
+  return (
+    <>
+      <a href="#home" className={`${activeSection==='home'? 'active':''} link after:left-[5px]`} onClick={() => handleLinkClick('home')}>Home</a>
+      <a href="#culture" className={`${activeSection==='culture'? 'active':''} link after:left-[6px]`} onClick={() => handleLinkClick('culture')}>Culture</a>
+      <a href="#academics" className={`${activeSection==='academics'? 'active':''} link after:left-[9px]`} onClick={() => handleLinkClick('academics')}>Academics</a>
+      <a href="#recruiters" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
+
+      <Popover open={isDownloadDropDownOpen} onOpenChange={(open) => setIsDownloadDropDownOpen(open)}>
+        <PopoverTrigger asChild>
+          <button className={`${isDownloadDropDownOpen? 'active':''} link after:left-[1px]  duration-300`}>
+            Downloads/Links
+            <RxCaretDown size={20} className={`inline transition-all duration-150 ${isDownloadDropDownOpen? 'rotate-180':''}`} />
+          </button>
+        </PopoverTrigger>
+        <PopoverContent className="flex flex-col justify-center border border-[#0193DC] rounded-md w-full md:min-w-[180px] transition-all duration-200 mt-4 p-0">
+          <a href="https://forms.gle/UShR3XVSmGkenxPz7"
+            className={cn("px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all border-b font-medium lg:font-semibold",
+              isDrawer? 'bg-[#0193DC] border-white':'border-[#0193DC] hover:bg-[#0193DC]'
+            )}
+          >
+            Apply for NOC
+          </a>
+          <a href="https://drive.google.com/file/d/1B_nslwKgPqV3Eja1REDP_S4AxFJkQ7rk/view?usp=sharing"
+            className={"px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold"}
+          >
+            Undertaking
+          </a>
+        </PopoverContent>
+      </Popover>
+    </>
+  );
+}
+
+export default function Navbar() {
+  const [isDrawerOpen, setIsDrawerOpen]=useState(false);
 
   return (
     <div className="bg-transparent w-full">
@@ -29,43 +88,23 @@ export default function Navbar({
         <div>
           <img src={Logo} alt="NSUT" className="w-[50px]" />
         </div>
-        <div className="gap-6 text-sm lg:text-base hidden md:flex">
-          <a href="#home" className={`${activeSection === 'home' ? 'active' : ''} link after:left-[5px]`} onClick={() => handleLinkClick('home')}>Home</a>
-          <a href="#culture" className={`${activeSection === 'culture' ? 'active' : ''} link after:left-[6px]`} onClick={() => handleLinkClick('culture')}>Culture</a>
-          <a href="#academics" className={`${activeSection === 'academics' ? 'active' : ''} link after:left-[9px]`} onClick={() => handleLinkClick('academics')}>Academics</a>
-          <a href="#recruiters" className={`${activeSection === 'recruiters' ? 'active' : ''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
-          <div className={`${openLink && 'active'} relative flex gap-1 items-center duration-300 link after:left-[1px] cursor-pointer`} onClick={()=>setOpenLink(!openLink)}>
-            Downloads/Links
-            <IoIosArrowDown className={`${openLink && 'rotate-180'} transition-all duration-150`} />
-            <div className={`absolute ${openLink ? 'scale-1' : 'scale-0'} flex flex-col justify-center items-center border border-[#0193DC] top-[120%] right-0 left-0 md:left-[-8%] rounded-md w-full md:min-w-[180px] transition-all duration-200`}>
-              <Link to="https://forms.gle/UShR3XVSmGkenxPz7" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold border-b border-[#0193DC]" >
-                Apply for NOC
-              </Link>
-              <Link to="https://drive.google.com/file/d/1B_nslwKgPqV3Eja1REDP_S4AxFJkQ7rk/view?usp=sharing" className="p-2 duration-300 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
-                Undertaking
-              </Link>
-            </div>
-          </div>
+        <div className="gap-6 text-sm lg:text-base hidden lg:flex">
+          <Menu />
         </div>
-        <div>
-          <div className="relative px-10 flex items-center gap-4 py-2 duration-200 text-sm lg:text-base border border-[#0193DC] rounded-md font-medium lg:font-semibold cursor-pointer" onClick={handleClick}>
-            Login
-            <IoIosArrowDown className={`${openLogin && 'rotate-180'} transition-all duration-150`} />
-            <div className={`absolute ${openLogin ? 'scale-1' : 'scale-0'} flex flex-col justify-center items-center border border-[#0193DC] top-[120%] right-0 left-0 md:left-[-8%] rounded-md w-full md:min-w-[180px] transition-all duration-200`}>
-              <Link to="https://student.tnpnsut.in" className="p-2 duration-200 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold border-b border-[#0193DC]" >
-                Students
-              </Link>
-              <Link to="https://admin.tnpnsut.in" className="p-2 duration-200 w-full text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold whitespace-nowrap" >
-                Coordinators
-              </Link>
-            </div>
-          </div>
+        <div className="hidden lg:block">
+          <LoginPopover />
         </div>
 
-
-        {/* <div className="md:hidden block">
-          <img src={Logo} alt="NSUT" className="w-[50px]" />
-        </div> */}
+        <button className="lg:hidden" onClick={() => setIsDrawerOpen(true)}>
+          <FiMenu />
+        </button>
+        <div className={`fixed top-0 left-0 w-full h-screen bg-black/80 z-40 transition duration-300 ease-in-out transform ${isDrawerOpen? '-translate-x-0':'-translate-x-full'}`}>
+          <div className="flex flex-col justify-center items-center h-full text-xl gap-4">
+            <button className="rounded-full ring-2 ring-white p-2 my-2 hover:bg-white hover:text-black" onClick={() => setIsDrawerOpen(false)}><RxCross2 className="h-4 w-4" /></button>
+            <Menu isDrawer setIsDrawerOpen={setIsDrawerOpen} />
+            <LoginPopover />
+          </div>
+        </div>
       </nav>
     </div>
   );

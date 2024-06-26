@@ -13,17 +13,17 @@ export default function AllPagesPdf(props) {
     setNumPages(numPages);
   }
 
-  const { pdf } = props;
+  const { pdf } = props; // Assuming pdfUrl is provided in props
+  console.log(pdf);
 
   return (
     <Document
-      file={pdf}
-      // options={{ workerSrc: "/pdf.worker.js", standardFontDataUrl: 'standard_fonts/' }}
+      file={pdf} // Use the AWS link directly here
       onLoadSuccess={onDocumentLoadSuccess}
       className="w-full"
     >
       {Array.from(new Array(numPages), (el, index) => (
-        <Page key={`page_${index + 1}`} pageNumber={index + 1} className="w-full"/>
+        <Page key={`page_${index + 1}`} pageNumber={index + 1} renderMode="cors" className="w-full"/>
       ))}
     </Document>
   );
