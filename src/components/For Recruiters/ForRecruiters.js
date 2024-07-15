@@ -9,8 +9,7 @@ import ProcedureCard from "./ProcedureCard";
 
 const ForRecruiters = () => {
 
-  const downloadPdf = () => {
-    
+ 
 
   return (
     <div className="flex w-full flex-col gap-10 py-5" id="recruiters">
