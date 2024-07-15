@@ -11,7 +11,8 @@ import ProcedureCard from "./ProcedureCard";
 const ForRecruiters = () => {
 
   const downloadPdf = () => {
-    saveAs("https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf", "NSUT_Placement_Policies_2023-2024.pdf");
+    // https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf
+    saveAs("", "NSUT_Placement_Policies_2023-2024.pdf");
   };
 
   return (
@@ -24,7 +25,7 @@ const ForRecruiters = () => {
         The <strong>Placement Policy</strong> guidelines prevailing currently are as under:
       </div>
       {/* <div className="flex-col hidden md:flex items-center border h-screen overflow-y-scroll overflow-scroll"> */}
-        {/* <AllPagesPdf pdf={"https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf"} /> */}
+        {/* <AllPagesPdf pdf={""} /> */}
         <iframe title="T&P Guidelines" src="https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf" className="md:w-full" style={{width:"60vw", height:"100vh", margin:"0 auto"}}/>
       {/* </div> */}
       <div className="flex flex-col justify-center items-center gap-4 px-10 mb-6">
