@@ -2,7 +2,7 @@ import React from "react";
 import Heading2 from "../Heading2";
 import Heading from "../Heading";
 import AllPagesPdf from "../pdf/AllPagesPdf";
-import PlacementPolicy from "";
+import PlacementPolicy from "../../Placement_Policy_2023-24.pdf";
 import { saveAs } from "file-saver";
 import Procedure from '../../images/Procedure.png';
 import { placementProcedure } from "../../styles/constant";
