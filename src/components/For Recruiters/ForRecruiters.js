@@ -19,7 +19,7 @@ const ForRecruiters = () => {
     <div className="flex w-full flex-col gap-10 py-5" id="recruiters">
       <div className="px-10 2xl:px-40">
         <Heading2 text="For Recruiters" color="after:w-1/3" />
-      // </div>
+      </div>
       // <Heading text="Placement Policies" styles="text-center hidden md:flex sm:mb-10" />
       // <div className="text-center px-10">
       //   The <strong>Placement Policy</strong> guidelines prevailing currently are as under:
