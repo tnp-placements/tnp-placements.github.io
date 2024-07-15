@@ -26,11 +26,11 @@ const ForRecruiters = () => {
       </div>
       {/* <div className="flex-col hidden md:flex items-center border h-screen overflow-y-scroll overflow-scroll"> */}
         {/* <AllPagesPdf pdf={""} /> */}
-        <iframe title="T&P Guidelines" src="https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf" className="md:w-full" style={{width:"60vw", height:"100vh", margin:"0 auto"}}/>
+        <iframe title="T&P Guidelines" src="" className="md:w-full" style={{width:"60vw", height:"100vh", margin:"0 auto"}}/>
       {/* </div> */}
       <div className="flex flex-col justify-center items-center gap-4 px-10 mb-6">
         <a
-          href="https://tnpnsut-files.s3.ap-south-1.amazonaws.com/Placement_Policy_2024_25_final_b6588b530d.pdf"
+          href=""
           target="_blank"
           rel="noreferrer"
           className="bg-[#0193DC] text-white px-4 py-2 md:hidden"
