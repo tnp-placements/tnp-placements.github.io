@@ -53,28 +53,7 @@ const Menu=({ isDrawer, setIsDrawerOpen }={ isDrawer: false }) => {
       <a href="#academics" className={`${activeSection==='academics'? 'active':''} link after:left-[9px]`} onClick={() => handleLinkClick('academics')}>Academics</a>
       <a href="#recruiters" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
 
-      // <Popover open={isDownloadDropDownOpen} onOpenChange={(open) => setIsDownloadDropDownOpen(open)}>
-      //   <PopoverTrigger asChild>
-      //     <button className={`${isDownloadDropDownOpen? 'active':''} link after:left-[1px]  duration-300`}>
-      //       Downloads/Links
-      //       <RxCaretDown size={20} className={`inline transition-all duration-150 ${isDownloadDropDownOpen? 'rotate-180':''}`} />
-      //     </button>
-      //   </PopoverTrigger>
-      //   <PopoverContent className="flex flex-col justify-center border border-[#0193DC] rounded-md w-full md:min-w-[180px] transition-all duration-200 mt-4 p-0">
-      //     <a href="https://forms.gle/UShR3XVSmGkenxPz7"
-      //       className={cn("px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all border-b font-medium lg:font-semibold",
-      //         isDrawer? 'bg-[#0193DC] border-white':'border-[#0193DC] hover:bg-[#0193DC]'
-      //       )}
-      //     >
-      //       Apply for NOC
-      //     </a>
-      //     <a href="https://drive.google.com/file/d/1B_nslwKgPqV3Eja1REDP_S4AxFJkQ7rk/view?usp=sharing"
-      //       className={"px-10 py-2 duration-300 text-white text-sm lg:text-base transition-all hover:bg-[#0193DC] font-medium lg:font-semibold"}
-      //     >
-      //       Undertaking
-      //     </a>
-      //   </PopoverContent>
-      // </Popover>
+     
     </>
   );
 }
