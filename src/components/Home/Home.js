@@ -8,6 +8,7 @@ import CourseOffered from '../Course Offered/CourseOffered';
 import Achievement from '../Achievement/Achievement';
 import ForRecruiters from '../For Recruiters/ForRecruiters';
 import Footer from '../Footer/Footer';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <History />
         <StudentLife />
         <CourseOffered/>
+        <Contact/>
         <ForRecruiters />
         <Footer />
     </div>
