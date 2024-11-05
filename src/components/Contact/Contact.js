@@ -10,7 +10,7 @@ const Contact = () => {
       
       <div className="flex flex-col gap-6 max-w-4xl">
         <p className="text-gray-700 mb-6">
-          Those interested in the campus recruitment may please contact:
+          Those interested in the campus recruitment also contact:
         </p>
 
         <div className="flex flex-col gap-8">
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="space-y-1 text-gray-700">
               <p>Mobile: +91-9968604935, +91-9810472670</p>
               <p>Email: 
-                <a href="mailto:rajesh.rawat@nsitonline.in" className="text-blue-600 hover:underline ml-1">rajesh.rawat@nsitonline.in</a>,
+                <a href="mailto:placements@nsut.ac.in" className="text-blue-600 hover:underline ml-1">placements@nsut.ac.in</a>,
                 <a href="mailto:placements@nsitonline.in" className="text-blue-600 hover:underline ml-1">placements@nsitonline.in</a>
               </p>
               <p>Tel: +91-11-25099021</p>
