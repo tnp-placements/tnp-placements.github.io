@@ -19,7 +19,7 @@ const Footer=() => {
               <div className="text-[#0C101A] font-light">
                 Netaji Subhas University Of Technology
               </div>
-              <div className="font-semibold">Training and Placement Cell</div>
+              <div className="font-semibold">Training and Placements</div>
             </div>
           </div>
           <div className="text-[#0C101A] font-light flex flex-col gap-2">
