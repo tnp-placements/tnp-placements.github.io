@@ -13,7 +13,7 @@ const Contact = () => {
           Those interested in the campus recruitment also contact:
         </p>
 
-        <div className="flex w-full flex-col gap-10">
+        
             
           <div className="space-y-3">
             <h3 className="text-xl font-bold text-gray-900">Dr. M.P.S. Bhatia</h3>
@@ -52,7 +52,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
