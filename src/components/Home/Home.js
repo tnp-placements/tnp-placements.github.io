@@ -18,10 +18,9 @@ const Home = () => {
         <Achievement />
         <PastRecruiters/>
         <History />
-        <StudentLife />
-        <CourseOffered/>
-        <Contact/>
+        <StudentLife />        
         <ForRecruiters />
+        <Contact/>
         <Footer />
     </div>
   )
