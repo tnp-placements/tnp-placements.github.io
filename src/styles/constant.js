@@ -12,7 +12,12 @@ import Achievement2 from '../images/Achievements2.png';
 import Achievement3 from '../images/Achievements3.png';
 
 export const about = {
-    aboutText: "Previously NSUT is an Autonomous Institution under Govt. of NCT of Delhi and affiliated to University of Delhi, Netaji Subhas Institute of Technology is a seat of higher technical education in India. Established with the objective of meeting the growing demands of manpower in the emerging fields of engineering and technology, over a period of time, the institute has carved a niche for itself, both nationally and internationally, for excellence in technical education and research.",
+    aboutText: "The Training and Placement Section at NSUT is responsible for all placement-related activities at our institution. We play a vital role in bridging the gap between corporate and academia, ensuring that our students gain hands-on experience through internships during winter and summer breaks. These internships span multinational, private, and public sector companies, as well as government departments and foreign universities.
+The Campus Recruitment Programme at NSUT is a cornerstone for our students, providing them with the opportunity to secure placements in government departments, multinational companies, and public sector undertakings. Thanks to our close collaboration with various company executives and the diligent efforts of our student placement coordinators, we have achieved an outstanding placement record.
+Our graduates consistently secure positions in prestigious organizations across multiple sectors, often receiving multiple job offers. Many students have also been accepted into renowned Indian B-Schools such as the Indian Institutes of Management (Ahmedabad, Calcutta, Kozhikode, and Lucknow) and the Faculty of Management Studies (FMS), as well as top foreign universities like the University of Pennsylvania and Columbia University for higher studies.
+NSUT places great emphasis on strengthening industry-institute interaction and collaboration with other educational institutions and R&D laboratories, both nationally and internationally.
+Some top-notch organizations where our students have interned and secured placements include:
+",
     cardDetails: [
         {
             imgUrl: Campus,
