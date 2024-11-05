@@ -21,9 +21,9 @@ const ForRecruiters = () => {
             <div className="px-2 sm:px-0 lg:px-14 mb-14">
                 <Heading2 text="Internship/Placement Availability and Joining dates for students" color="xl:after:w-0 after:w-0 text-[#0193DC] xl:text-center xl:w-full" />
             </div>
-            <div className="flex flex-col lg:flex-row lg:flex-wrap gap-14 pl-2 lg:gap-14 xl:gap-8 lg:justify-between 2xl:justify-evenly lg:px-14 sm:px-10">
-                
-            </div>
+            <div className='text-[#123794] fw-bold px-5 sm:px-10 xl:px-0'>Below is a detailed description of internship and Placements availability (date & duration) for various courses at the university.
+The dates mentioned below for the exam and internship are tentative, it all depends on the release of the last date sheet scheduled 10-15 days before the exam
+</div>
         </div>
    
 
