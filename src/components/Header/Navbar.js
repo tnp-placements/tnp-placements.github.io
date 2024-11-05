@@ -49,14 +49,12 @@ const Menu=({ isDrawer, setIsDrawerOpen }={ isDrawer: false }) => {
   return (
     <>
       <a href="#home" className={`${activeSection==='home'? 'active':''} link after:left-[5px]`} onClick={() => handleLinkClick('home')}>Home</a>
-      <a href="#culture" className={`${activeSection==='culture'? 'active':''} link after:left-[6px]`} onClick={() => handleLinkClick('culture')}>Culture</a>
-      <a href="#academics" className={`${activeSection==='academics'? 'active':''} link after:left-[9px]`} onClick={() => handleLinkClick('academics')}>Academics</a>
+      <a href="#culture" className={`${activeSection==='culture'? 'active':''} link after:left-[6px]`} onClick={() => handleLinkClick('culture')}>About Us</a>
+      <a href="http://www.nsut.ac.in/hi/about-nsut" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>About NSUT</a>
+      <a href="http://www.nsut.ac.in/hi/node/1265" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Academic Curriculum</a>
       <a href="#recruiters" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
-      <a href="http://www.nsut.ac.in/hi/about-nsut" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>About Us</a>
-
       <a href="http://www.nsut.ac.in/hi/node/335" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Alumni</a>
-      <a href="http://www.nsut.ac.in/hi/photo-gallery" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Media</a>
-      <a href="http://www.nsut.ac.in/hi/node/1265" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Course Curriculum</a>
+      <a href="http://www.nsut.ac.in/hi/photo-gallery" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Media</a>      
       <a href="#contact" className={`${activeSection==='contact'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('contact')}>Contact Us</a>
   
     </>
