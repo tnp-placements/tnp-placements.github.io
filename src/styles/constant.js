@@ -23,12 +23,12 @@ export const about = {
         },
         {
             imgUrl: Ranking,
-            title: "Non-Technical Domain",
+            title: "Non-Tech Profiles",
             description: "Bain and Company, JPMorgan, ZS Associates, McKinsey and Company, BlackRock Group, American Express, KPMG, E&Y, Axis Bank, Axxela, RBL Bank, EXL, Mastercard, Future First, LEK, and Thorogood."
         },
         {
             imgUrl: Established,
-            title: "Core Domain",
+            title: "Core Profiles",
             description: "Texas Instruments, Nvidia, Qualcomm, Cadence, Samsung, Bharti Airtel, Reliance, Vedanta, Schlumberger, Maruti, Anand Motors, Hero Moto Corp, Siemens, ARM, Jubilant Foodworks, GAIL, CDOT, and BEL"
         }
     ]
