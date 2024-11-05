@@ -17,10 +17,7 @@ const About = () => {
           <div className='flex flex-col gap-12 xl:gap-8 bg-[#F9FBFD] xl:w-full'>
             <div className='text-[#0C101A] px-5 sm:px-10 xl:px-0'>{about.aboutText}</div>
            <div className='text-[#0C101A] px-5 sm:px-10 xl:px-0'>{about.aboutTexts}</div>
-           <div className='text-[#0C101A] px-5 sm:px-10 xl:px-0'>{about.list1}</div>
-           <div className='text-[#0C101A] px-5 sm:px-10 xl:px-0'>{about.list2}</div>
-           <div className='text-[#0C101A] px-5 sm:px-10 xl:px-0'>{about.list3}</div>
-            <div className='flex flex-col md:flex-row xl:justify-evenly items-center gap-4 md:gap-8 xl:gap-4 xl:flex-nowrap xl:px-0 md:justify-center md:px-6 md:flex-wrap'>
+           <div className='flex flex-col md:flex-row xl:justify-evenly items-center gap-4 md:gap-8 xl:gap-4 xl:flex-nowrap xl:px-0 md:justify-center md:px-6 md:flex-wrap'>
               {about.cardDetails.map((card)=>(
                 <AboutCard about={card} key={card.title}/>
               ))}
