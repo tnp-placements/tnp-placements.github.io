@@ -10,7 +10,7 @@ const Contact = () => {
       
       <div className="flex flex-col gap-6 max-w-4xl">
         <p className="text-gray-700 mb-6">
-          Those interested in the campus recruitment also contact:
+          Those interested in the campus recruitment may also contact:
         </p>
 
         
