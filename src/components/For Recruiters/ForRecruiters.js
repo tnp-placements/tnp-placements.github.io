@@ -21,7 +21,7 @@ const ForRecruiters = () => {
        <div>
             <h1>Internship/Placement Availability and Joining dates for students</h1>
             <H1>Below is a detailed description of internship and Placements availability (date & duration) for various courses at the university. The dates mentioned below for the exam and internship are tentative, it all depends on the release of the last date sheet scheduled 10-15 days before the exam</h2>
-
+            <div className="flex flex-col xl:flex-row xl:items-center">
             <table border="1" cellPadding="10" cellSpacing="0">
                 <thead>
                     <tr>
@@ -126,6 +126,7 @@ const ForRecruiters = () => {
                     </tr>
                 </tbody>
             </table>
+   </div>
         </div>
        </div>
    
