@@ -4,11 +4,11 @@ import About from '../About/About';
 import PastRecruiters from '../Past Recruiters/PastRecruiters';
 import History from '../History/History';
 import StudentLife from '../Student Life/StudentLife';
-import CourseOffered from '../Course Offered/CourseOffered';
 import Achievement from '../Achievement/Achievement';
 import ForRecruiters from '../For Recruiters/ForRecruiters';
 import Footer from '../Footer/Footer';
 import Contact from '../Contact/Contact';
+import Stats from '../stats/stats';
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
         <History />
         <StudentLife />        
         <ForRecruiters />
+        <Stats/>
         <Contact/>
         <Footer />
     </div>
