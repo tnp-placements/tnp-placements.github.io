@@ -1,6 +1,6 @@
 import React from "react";
 import Heading2 from "../Heading2";
-import Procedure from '../../images/Procedure.png';
+import Procedure from '../../images/stats.jpg';
 
 
 const Stats = () => {
