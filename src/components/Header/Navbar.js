@@ -54,7 +54,8 @@ const Menu=({ isDrawer, setIsDrawerOpen }={ isDrawer: false }) => {
       <a href="http://www.nsut.ac.in/hi/node/1265" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Academic Curriculum</a>
       <a href="#recruiters" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>For Recruiters</a>
       <a href="http://www.nsut.ac.in/hi/node/335" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Alumni</a>
-      <a href="http://www.nsut.ac.in/hi/photo-gallery" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Media</a>      
+      <a href="http://www.nsut.ac.in/hi/photo-gallery" className={`${activeSection==='recruiters'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('recruiters')}>Media</a>
+      <a href="#stats" className={`${activeSection==='Stats'? 'active':''} link after:left-[6px]`} onClick={() => handleLinkClick('Stats')}>Stats</a>
       <a href="#contact" className={`${activeSection==='contact'? 'active':''} link after:left-[11px]`} onClick={() => handleLinkClick('contact')}>Contact Us</a>
   
     </>
